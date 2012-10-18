@@ -1,0 +1,40 @@
+html,body{
+	width:100%;
+	height:100%;
+}
+body {
+	background: #1d1d1d;
+}
+.navigation-bar .navigation-bar-inner > .brand .name {
+  font-family: "Microsoft YaHei UI", sans-serif;
+}
+.navigation-bar .navigation-bar-inner > ul {
+	margin: 0;
+}
+@media (min-width: 980px) {
+	.navigation-bar .navigation-bar-inner > ul {
+		padding: 0;
+		text-align: right;
+	}
+}
+@media (max-width: 767px){
+	body {
+		padding: 0 !important;
+	}
+}
+.navigation-bar .navigation-bar-inner > ul > li {
+	line-height: 30px;
+}
+.navigation-bar .navigation-bar-inner {
+	line-height: 40px;
+}
+
+.menu-pull {
+	top: 13px;
+	right: 20px;
+}
+.logo{
+  height: 40px;
+  width: 100px;
+  background-image:url(../images/logo100x40.gif);
+}
