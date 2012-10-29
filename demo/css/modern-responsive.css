@@ -1,5 +1,12 @@
 /*
- * Metro UI CSS v 0.1.1
+ * Metro UI CSS v 0.1.4
+ * Copyright 2012 Sergey Pimenov
+ * Licensed under the MIT Lilcense
+ *
+ * responsive.less
+ */
+/*
+ * Metro UI CSS v 0.1.4
  * Copyright 2012 Sergey Pimenov
  * Licensed under the MIT Lilcense
  *
@@ -152,7 +159,17 @@
 .border-color-grayDark {
   border-color: #525252 !important;
 }
+/*
+ * Metro UI CSS v 0.1.4
+ * Copyright 2012 Sergey Pimenov
+ * Licensed under the MIT Lilcense
+ *
+ * responsive.less
+ */
 /* Large desktop */
+@media (min-width: 1200px) {
+  
+}
 @media (min-width: 980px) {
   .navigation-bar .navigation-bar-inner .menu-pull {
     display: none;
@@ -161,6 +178,13 @@
     display: block !important;
   }
 }
+/*
+ * Metro UI CSS v 0.1.4
+ * Copyright 2012 Sergey Pimenov
+ * Licensed under the MIT Lilcense
+ *
+ * responsive.less
+ */
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   .span1 {
@@ -262,6 +286,13 @@
     border: 0;
   }
 }
+/*
+ * Metro UI CSS v 0.1.4
+ * Copyright 2012 Sergey Pimenov
+ * Licensed under the MIT Lilcense
+ *
+ * responsive.less
+ */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   body {
@@ -319,6 +350,13 @@
     border: 0;
   }
 }
+/*
+ * Metro UI CSS v 0.1.4
+ * Copyright 2012 Sergey Pimenov
+ * Licensed under the MIT Lilcense
+ *
+ * responsive.less
+ */
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .page.secondary .page-back {
@@ -444,6 +482,38 @@
   }
   .tile.quadro-vertical .tile-content {
     height: 470px;
+  }
+  .tile .tile-content {
+    padding: 5px 10px;
+  }
+  .tile.icon  > .tile-content img {
+    width: 48px;
+    height: 48px;
+    margin-left: -24px;
+    margin-top: -32px;
+  }
+  .tile .brand  > .badge,
+  .tile .tile-status  > .badge {
+    width: 26px;
+    height: 28px;
+    right: 0;
+    font-size: 9pt;
+  }
+  .tile .brand  > .name,
+  .tile .tile-status  > .name {
+    margin-left: 10px;
+  }
+  .tile .brand  > .icon,
+  .tile .tile-status  > .icon {
+    width: 24px;
+    height: 24px;
+    margin: 5px 10px;
+  }
+  .tile .brand  > .text,
+  .tile .tile-status  > .text {
+    left: 40px;
+    right: 40px;
+    font-size: 8pt;
   }
   .tile-group {
     max-width: 400px;

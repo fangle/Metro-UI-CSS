@@ -27,13 +27,13 @@
 
         <div class="brand">
             <a href="/"><span class="metro-ui-logo place-left"></span></a>
-            <a href="/"><span class="name">Metro UI CSS <sup class="fg-color-yellow tertiary-info-secondary-text"> v 0.1.3</sup></span></a>
+            <a href="/"><span class="name">Metro UI CSS <sup class="fg-color-yellow tertiary-info-secondary-text"> v 0.1.5</sup></span></a>
         </div>
 
         <ul>
             <li><a href="/">Home</a></li>
 
-            <li data-role="dropdown">
+            <li data-role="dropdown" class="sub-menu">
                 <a href="#">Scaffolding</a>
                 <ul class="dropdown-menu">
                     <li><a href="global.php">Global styles</a></li>
@@ -44,7 +44,7 @@
                 </ul>
             </li>
 
-            <li data-role="dropdown">
+            <li data-role="dropdown" class="sub-menu">
                 <a href="#">Base CSS</a>
                 <ul class="dropdown-menu">
                     <li><a href="typography.php">Typography</a></li>
@@ -57,14 +57,17 @@
                 </ul>
             </li>
 
-            <li data-role="dropdown">
+            <li data-role="dropdown" class="sub-menu">
                 <a href="#">Components</a>
                 <ul class="dropdown-menu">
                     <li><a href="tiles.php">Tiles</a></li>
                     <li><a href="menus.php">Menu and Navigation</a></li>
+                    <li><a href="sidebar.php">Sidebar</a></li>
                     <li><a href="pagecontrol.php">Page control</a></li>
                     <li><a href="accordion.php">Accordion</a></li>
                     <li><a href="buttons-set.php">Buttons set</a></li>
+                    <li><a href="rating.php">Rating</a></li>
+                    <li><a href="progress.php">Progress bars</a></li>
                     <li class="divider"></li>
                     <li><a href="notices.php">Notices and Replies</a></li>
                     <li class="divider"></li>

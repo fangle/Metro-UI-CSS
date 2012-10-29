@@ -1,17 +1,24 @@
-﻿1.增加demo
-2.针对演示增加一些效果
-3.支持变更背景图和配色
-4.增加mac ui样式
-Version 0.1.3
+# Welcome
 
-// Readme file
+Metro UI CSS a set of styles to create a site with an interface similar to Windows 8 Metro UI. This set of styles was developed as a self-contained solution.
 
-New version has many changes. See details of definition on http://metroui.org.ua
+Version 0.1.5
+
+See details of definition on http://metroui.org.ua
 
 //
 
-Demo available on http://metroui.org.ua. Now work without any css frameworks.
-Demo source placed in public folder.
+# Team
+
+## Sergey Pimenov
+Kiev, Ukraine.
+Project owner, team leader.
+CSS/LESS, HTML, Javascript.
+
+## Sergey Volkov
+Voljskiy, Russia.
+Project member.
+Javascript.
 
 //
 
