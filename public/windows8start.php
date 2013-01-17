@@ -9,12 +9,14 @@
 
     <link href="css/modern.css" rel="stylesheet">
     <link href="css/theme-dark.css" rel="stylesheet">
+    <link href="css/modern-responsive.css" rel="stylesheet">
 
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/google-analytics.js"></script>
-    <script src="js/jquery.mousewheel.min.js"></script>
-    <script src="js/github.info.js"></script>
-    <script src="js/tile-slider.js"></script>
+    <script src="js/assets/jquery-1.8.2.min.js"></script>
+    <script src="js/assets/google-analytics.js"></script>
+    <script src="js/assets/jquery.mousewheel.min.js"></script>
+    <script src="js/assets/github.info.js"></script>
+    <script src="js/modern/tile-slider.js"></script>
+    <script src="js/modern/tile-drag.js"></script>
 
     <title>Modern UI CSS</title>
 
@@ -43,10 +45,11 @@
         function AddMouseWheel(){
             $("body").mousewheel(function(event, delta){
                 var scroll_value = delta * 50;
-                if (!jQuery.browser.chrome) {
-                    document.documentElement.scrollLeft -= scroll_value;
-                } else {
+                if (jQuery.browser.webkit) {
                     this.scrollLeft -= scroll_value;
+
+                } else {
+                    document.documentElement.scrollLeft -= scroll_value;
                 }
                 return false;
             });
@@ -84,8 +87,8 @@
 
     <div class="page-region">
         <div class="page-region-content tiles">
-            <div class="tile-group">
-                <div class="tile image">
+            <div class="tile-group tile-drag">
+                <div class="tile image outline-color-green">
                     <div class="tile-content">
                         <img src="images/myface.jpg" alt="">
                     </div>
@@ -164,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="tile double bg-color-green" data-role="slider" data-param-period="3000">
+                <div class="tile double bg-color-green" data-role="tile-slider" data-param-period="3000">
                     <div class="tile-content">
                         <h2>mattberg@live.com</h2>
                         <h5>Re: Wedding Annoucement!</h5>
@@ -184,7 +187,7 @@
                         <img class="icon" src="images/Mail128.png"/>
                     </div>
                 </div>
-                <div class="tile double image-slider" data-role="slider" data-param-period="5000" data-param-direction="left">
+                <div class="tile double image-slider" data-role="tile-slider" data-param-period="5000" data-param-direction="left">
                     <div class="tile-content">
                         <img src="images/1.jpg" alt="">
                     </div>
@@ -204,7 +207,15 @@
 
             </div>
 
-            <div class="tile-group" style="width: 322px;">
+            <div class="tile-group tile-drag" style="width: 322px;">
+                <div class="tile image outline-color-green">
+                    <div class="tile-content">
+                        <img src="images/myface.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile-group tile-drag" style="width: 322px;">
                 <div class="tile bg-color-blue icon">
                     <div class="tile-content">
                         <img src="images/InternetExplorer128.png"/>
@@ -311,7 +322,7 @@
                 </div>
             </div>
 
-            <div class="tile-group" style="width: 322px;">
+            <div class="tile-group tile-drag" style="width: 322px;">
                 <div class="tile double image">
                     <div class="tile-content">
                         <img src="images/4.jpg" alt="" />
@@ -356,6 +367,29 @@
                     </div>
                     <div class="brand">
                         <span class="name">OneNote 2013</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile-group">
+                <div class="tile quadro double-vertical image-set">
+                    <div class="tile-content">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <img src="images/2.jpg" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <img src="images/5.jpg" alt="">
+                    </div>
+                    <div class="brand">
+                        <span class="name">Photos</span>
                     </div>
                 </div>
             </div>

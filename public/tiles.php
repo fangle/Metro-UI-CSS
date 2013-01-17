@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="Modern UI CSS">
-    <meta name="author" content="Sergey Pimenov">
-    <meta name="keywords" content="windows 8, modern style, modern ui, style, modern, css, framework">
+<? include("header.php")?>
 
-    <link href="css/modern.css" rel="stylesheet">
-    <link href="css/modern-responsive.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet" type="text/css">
-    <link href="js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
-
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/google-analytics.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
-    <script src="js/github.info.js"></script>
-    <script src="js/tile-slider.js"></script>
-
-    <title>Modern UI CSS</title>
-</head>
-<body class="modern-ui" onload="prettyPrint()">
     <div class="page secondary">
-        <? include("header.php")?>
-
         <div class="page-header">
             <div class="page-header-content">
                 <h1>Tiles<small>demo</small></h1>
@@ -191,11 +168,12 @@
         &lt;/div&gt;
     &lt;/div&gt;
 </pre>
+                                <h2 id="tile-slider-plugin">Tile Slider Plugin</h2>
                                 <p>
-                                    For use <code>slider</code> you mus include <code>tile-slider.js</code> in head of you page and add attribute <code>data-role="slider"</code> to tile object.
+                                    For use <code>tile-slider</code> you mus include <code>tile-slider.js</code> in head of you page and add attribute <code>data-role="tile-slider"</code> to tile object.
                                     To set specific parameters such as <code>direction</code>, <code>duration</code> and <code>period</code> you must add param <code>data-param-direction(duration, period)</code> to tile object.
                                 </p>
-                                <div class="tile double image-slider" data-role="slider">
+                                <div class="tile double image-slider" data-role="tile-slider">
                                     <div class="tile-content">
                                         <img src="images/1.jpg" alt="">
                                     </div>
@@ -213,7 +191,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tile double image-slider" data-role="slider" data-param-direction="left" data-param-period="3000">
+                                <div class="tile double image-slider" data-role="tile-slider" data-param-direction="left" data-param-period="3000">
                                     <div class="tile-content">
                                         <img src="images/1.jpg" alt="">
                                     </div>
@@ -231,7 +209,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tile double image-slider" data-role="slider" data-param-direction="down" data-param-period="3000">
+                                <div class="tile double image-slider" data-role="tile-slider" data-param-direction="down" data-param-period="3000">
                                     <div class="tile-content">
                                         <img src="images/1.jpg" alt="">
                                     </div>
@@ -249,7 +227,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tile double image-slider" data-role="slider" data-param-direction="right" data-param-period="3000" data-param-duration="3000">
+                                <div class="tile double image-slider" data-role="tile-slider" data-param-direction="right" data-param-period="3000" data-param-duration="3000">
                                     <div class="tile-content">
                                         <img src="images/1.jpg" alt="">
                                     </div>
@@ -267,7 +245,7 @@
                                     </div>
                                 </div>
 
-                                <div class="tile double bg-color-green" data-role="slider" data-param-period="3000">
+                                <div class="tile double bg-color-green" data-role="tile-slider" data-param-period="3000">
                                     <div class="tile-content">
                                         <h2>mattberg@live.com</h2>
                                         <h5>Re: Wedding Annoucement!</h5>
@@ -587,10 +565,6 @@
 
             </div>
         </div>
-        <? include("footer.php")?>
-
     </div>
-    <?php include("counter.php");?>
 
-</body>
-</html>
+<? include("footer.php")?>

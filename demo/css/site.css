@@ -1,40 +1,171 @@
 html,body{
-	width:100%;
 	height:100%;
+}
+html{
+	overflow-y:hidden;
+	overflow-x:scroll;
 }
 body {
 	background: #1d1d1d;
-}
-.navigation-bar .navigation-bar-inner > .brand .name {
-  font-family: "Microsoft YaHei UI", sans-serif;
-}
-.navigation-bar .navigation-bar-inner > ul {
-	margin: 0;
-}
-@media (min-width: 980px) {
-	.navigation-bar .navigation-bar-inner > ul {
-		padding: 0;
-		text-align: right;
-	}
-}
-@media (max-width: 767px){
-	body {
-		padding: 0 !important;
-	}
-}
-.navigation-bar .navigation-bar-inner > ul > li {
-	line-height: 30px;
-}
-.navigation-bar .navigation-bar-inner {
-	line-height: 40px;
+	background: repeat-x url(../images/bg/BG2.jpg);
+	background-size: cover;
+	background-attachment:fixed;
 }
 
-.menu-pull {
-	top: 13px;
-	right: 20px;
+/*google滚动条样式*/
+::-webkit-scrollbar {
+    width:17px;
+    height:17px;
+    background-color:rgba(0,0,0,.3);
+    border:none
+}
+::-webkit-scrollbar-thumb {
+    background-color:#cdcdcd;
+    border:1px solid rgba(0,0,0,.5);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#dadada
+}
+::-webkit-scrollbar-thumb:active {
+    background-color:#606060
+}
+::-webkit-scrollbar-thumb:disabled {
+    background-color:#f9f9f9
+}
+::-webkit-scrollbar-corner {
+    background-color:rgba(0,0,0,.3);
+}
+::-webkit-scrollbar-button {
+    background-image:url(../images/win8-scrollbar.png);
+    background-repeat:no-repeat;
+}
+::-webkit-scrollbar-button:vertical {
+    height:33px
+}
+::-webkit-scrollbar-button:horizontal {
+    width:33px
+}
+::-webkit-scrollbar-button:horizontal:increment {
+    background-position:0 -444px
+}
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-position:12px -425px
+}
+::-webkit-scrollbar-button:vertical:increment {
+    background-position:-1px -391px
+}
+::-webkit-scrollbar-button:vertical:decrement {
+    background-position:-1px -358px
+}
+::-webkit-scrollbar-button:hover {
+    background-color:rgba(0,0,0,.4);
+}
+::-webkit-scrollbar-button:horizontal:increment:hover {
+    background-position:0 -548px
+}
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+    background-position:12px -529px
+}
+::-webkit-scrollbar-button:vertical:increment:hover {
+    background-position:-1px -495px
+}
+::-webkit-scrollbar-button:vertical:decrement:hover {
+    background-position:-1px -462px
+}
+::-webkit-scrollbar-button:active {
+    background-color:rgba(0,0,0,.6);
+}
+::-webkit-scrollbar-button:horizontal:increment:active {
+    background-position:0 -652px
+}
+::-webkit-scrollbar-button:horizontal:decrement:active {
+    background-position:12px -633px
+}
+::-webkit-scrollbar-button:vertical:increment:active {
+    background-position:-1px -599px
+}
+::-webkit-scrollbar-button:vertical:decrement:active {
+    background-position:-1px -566px
+}
+::-webkit-scrollbar-button:disabled {
+    background-color:#f9f9f9
+}
+::-webkit-scrollbar-button:horizontal:increment:disabled {
+    background-position:0 -756px
+}
+::-webkit-scrollbar-button:horizontal:decrement:disabled {
+    background-position:12px -737px
+}
+::-webkit-scrollbar-button:vertical:increment:disabled {
+    background-position:-1px -703px
+}
+::-webkit-scrollbar-button:vertical:decrement:disabled {
+    background-position:-1px -670px
+}
+
+@media (min-width: 980px) {
+}
+@media (max-width: 767px){
+}
+.page .page-header .page-header-content {
+	height: 105px;
+	min-height: 105px;
+}
+.page .page-header .page-header-content h1{
+	bottom:15px;
+}
+.page .page-header .page-header-content h1 span {
+	display: none;
+}
+.page .page-header .page-header-content .user-login {
+	margin: 45px 44px 0 0;
+}
+.page .page-header .page-header-content .user-login .avatar {
+	width: 50px;
+	height: 50px;
 }
 .logo{
-  height: 40px;
-  width: 100px;
-  background-image:url(../images/logo100x40.gif);
+	height: 70px;
+	width: 200px;
+	background-image:url(../images/logo.gif);
+}
+
+nav.ubi-toolbar.navigation-bar{
+	position:absolute;
+	width:auto;
+	min-height:30px;
+	right: 95px;
+	bottom: 6px;
+	background:none;
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner{
+	padding:0;
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner > ul {
+	padding:0;
+	margin:0;
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner > ul > li > a {
+	display: block;
+	width: 28px;
+	height: 28px;
+	line-height:40px;
+	background: no-repeat center;
+	color:#fff;
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner > ul > li > a span {
+	display:none;
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner > ul > li > a.setting {
+	background-image: url(../images/icon-edit.png);
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner > ul > li > a.theme {
+	background-image: url(../images/icon-theme.png);
+}
+nav.ubi-toolbar.navigation-bar .navigation-bar-inner > ul > li > a.logout {
+	background-image: url(../images/icon-logout.png);
+}
+.page .page-header .page-header-content .user-login .name .first-name {
+	font-family: "Microsoft YaHei UI", Verdana, Geneva, sans-serif;
+	font-size: 15px;
 }
